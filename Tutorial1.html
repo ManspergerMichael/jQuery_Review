@@ -5,16 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>jQuery</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    
+    
     <!--jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!--tutorial-->
     <script>
-        console.log($)
+        console.log($) //This is how one accesses the jQuery libary
+        console.log($()) //()is the element to affect
+
+        
+        
+
+        //put all jQuery in this to run after the document is loaded
+        $(document).ready(function() {
+            //this is how to select an html tag
+            $('h1').click(function() {
+                console.log("Hi");
+            });
+        });
     </script>
 </head>
 <body>
+    <h1>Click Me!</h1>
     
 </body>
 </html>
