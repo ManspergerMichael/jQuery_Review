@@ -5,10 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Basics</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
+    <!--jQuery script-->
+    <script>
+        $(document).ready(function(){
+            //selects all buttons in DOM
+            $('button')
+            //selets all buttons with class blue
+            $('button.blue')
+            //selects all button elements and all elements with class blue
+            $('button', '.blue')
+            //select element with id='red'
+            $('#red')
+
+        })
+    </script>
 </head>
 <body>
+    <button>Click me, Sempai!</button>
     
 </body>
 </html>
