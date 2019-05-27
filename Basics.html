@@ -11,6 +11,8 @@
     <!--jQuery script-->
     <script>
         $(document).ready(function(){
+            //selectors
+
             //selects all buttons in DOM
             $('button')
             //selets all buttons with class blue
@@ -19,6 +21,24 @@
             $('button', '.blue')
             //select element with id='red'
             $('#red')
+
+            //event listiners
+
+            //select button class and add a click event listner
+            $('button').click();
+
+            //event listener with attached function
+            $('button').click(function(){
+                alert("SEMPAI CLICKED ME!!!")
+            });
+
+            /*
+            Keep in mind the basic flow of using jQuery:
+            Select the element, class or id using the jQuery selector.
+            Add an event listener: How do you want this event to be triggered?
+            Write the code on what you want to happen when the event is triggered.
+            */
+
 
         })
     </script>
